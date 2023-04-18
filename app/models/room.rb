@@ -16,8 +16,8 @@ class Room
       raise CapacityReachedError, "Capacity reached"
     else
       @patients << patient
-      puts "Adding #{patient.name} to room with: #{self.capacity} capacity"
-      patient.room = self # refers to theINSTANCE of the room
+      # puts "Adding #{patient.name} to room with: #{self.capacity} capacity"
+      patient.room = self # refers to the INSTANCE of the room
     end
   end
 
